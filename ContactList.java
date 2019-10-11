@@ -1,6 +1,7 @@
 public class ContactList {
 	public static void main(String[] args) {
-	
+
+// PROGRAM BUILDS AN ARRAY OF CONTACTS (numberOfContacts) AND PRINTS ON THE SCREEN ONE OF THEM (contactNo)
 		int numberOfContacts = 3;	// How many contacts the contact list has.
 
 		Contact contact[] = new Contact[numberOfContacts];
@@ -10,7 +11,7 @@ public class ContactList {
 		contact[2] = new Contact("Ania", "Lewandowska", 674356829, "Dluga");
 // ---------------------------------------------------------------------------------		
 
-		int contactNo = 0; // Which contact from the list should be presented?
+		int contactNo = 0; // Which contact number from the list should be printed?
 		
 		String nameSurname = contact[contactNo].getNameSurname();
 		int number = contact[contactNo].getNumber();
