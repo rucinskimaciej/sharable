@@ -1,18 +1,17 @@
 public class ContactList {
 	public static void main(String[] args) {
 	
-		int numberOfContacts = 5;	// How many contacts the contact list has.
+		int numberOfContacts = 3;	// How many contacts the contact list has.
 
 		Contact contact[] = new Contact[numberOfContacts];
 // ---------------------------------------------------------------------------------
-		contact[0] = new Contact("Maciej", "Rucinski", 123456789, "Mokotowska");
+		contact[0] = new Contact("John", "Smith", 123456789, "Apple St");
 		contact[1] = new Contact("Jan", "Kowalski", 951384897, "Miodowa");
 		contact[2] = new Contact("Ania", "Lewandowska", 674356829, "Dluga");
-		contact[3] = new Contact("Agnieszka", "Senderowska-Rucinska", 888230944, "Ringelbluma");
-		contact[4] = new Contact("Brawurka", "Rucinska", 43919, "Ringelbluma");
 // ---------------------------------------------------------------------------------		
 
 		int contactNo = 0; // Which contact from the list should be presented?
+		
 		String nameSurname = contact[contactNo].getNameSurname();
 		int number = contact[contactNo].getNumber();
 		String address = contact[contactNo].getAddress();
@@ -52,8 +51,8 @@ class Contact{
 			this.number = number;
 			this.address = address;			
 		}
-	
-	static void result(String nameSurname, int number, String address) {
+	// method to print selected record on the screen
+	static void result(String nameSurname, int number, String address) { 
 		System.out.println("");
 		System.out.println("Name: " + nameSurname);
 		System.out.println("Phone number: " + number);
